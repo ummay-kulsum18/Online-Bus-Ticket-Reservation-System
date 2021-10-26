@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ServerController">
+   <children>
+      <ListView fx:id="ClientList" layoutX="33.0" layoutY="69.0" prefHeight="200.0" prefWidth="176.0" />
+      <TextArea fx:id="Message" layoutX="254.0" layoutY="74.0" prefHeight="191.0" prefWidth="308.0" promptText="Write Your Message Here">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font></TextArea>
+      <Button fx:id="SendButton" layoutX="240.0" layoutY="316.0" mnemonicParsing="false" onAction="#SendAction" text="Send">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="46.0" layoutY="33.0" text="CLIENT LIST">
+         <font>
+            <Font name="Calibri Light Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="275.0" layoutY="36.0" text="MESSAGE BOX">
+         <font>
+            <Font name="Calibri Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="All" layoutX="382.0" layoutY="317.0" mnemonicParsing="false" onAction="#SendThem" text="Send All">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
